@@ -3,32 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Goals Planner</title>
+    <title>Main Page - Goal Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Life Goals Planner</h1>
-        <p>Plan your future, one goal at a time</p>
-    </header>
+    <div class="container">
+        <h1>Goal Tracker</h1>
 
-    <section class="form-section">
-        <form id="goalForm">
-            <input type="text" id="goalTitle" placeholder="Enter your goal title" required>
-            <textarea id="goalDescription" placeholder="Enter your goal description" required></textarea>
-            <button type="submit">Submit Goal</button>
-        </form>
-    </section>
-
-    <section class="goals-section">
-        <h2>Your Goals</h2>
-        <div id="goals-container">
-            <!-- Goals will be dynamically added here -->
+        <div class="tabs">
+            <button id="viewGoalsBtn">View Goals</button>
+            <button id="addGoalBtn">Add Goals</button>
         </div>
-    </section>
+    </div>
 
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('viewGoalsBtn').addEventListener('click', () => {
+            window.location.href = 'viewGoals.html';  // Redirect to View Goals page
+        });
+
+        document.getElementById('addGoalBtn').addEventListener('click', () => {
+            window.location.href = 'addGoal.html';  // Redirect to Add Goals page
+        });
+    </script>
+
 </body>
 </html>
-
