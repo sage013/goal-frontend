@@ -1,0 +1,105 @@
+/* General body style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 50px;
+    animation: fadeIn 2s ease-out;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Form section styling */
+.form-section {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s ease-out;
+}
+
+/* Input and Textarea styling */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Goals section styling */
+.goals-section {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.goal {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    animation: goalFadeIn 1s ease-out;
+}
+
+.goal:hover {
+    transform: translateY(-5px);
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes goalFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+

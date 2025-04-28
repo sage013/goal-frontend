@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Goals Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Life Goals Planner</h1>
+        <p>Plan your future, one goal at a time</p>
+    </header>
+
+    <section class="form-section">
+        <form id="goalForm">
+            <input type="text" id="goalTitle" placeholder="Enter your goal title" required>
+            <textarea id="goalDescription" placeholder="Enter your goal description" required></textarea>
+            <button type="submit">Submit Goal</button>
+        </form>
+    </section>
+
+    <section class="goals-section">
+        <h2>Your Goals</h2>
+        <div id="goals-container">
+            <!-- Goals will be dynamically added here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
